@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffff;
+    height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display:flex;
+    flex-direction:column;
+}
+/* index design */
+.box {
+    width: 350px;
+    height: 380px;
+    color: black;
+    border: 1px solid #ddd;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+
+}
+.box .img {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-55%);
+    left: 50%;
+    top: 45%;
+    margin-top: -50%;
+    padding: 25px 30px;
+    border-radius: 5px 5px 0px 0px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+}
+.content {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 3px 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.box .check{
+    padding: 5px 5px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.content .shadw {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+
+}
+.content .btn {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.btn {
+    color: #ffff;
+    background-color: #337ab7;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 8px 0;
+}
+.btn:hover {
+    background-color: #2e6da4;
+}
+.shadw:focus {
+    box-shadow: 1px 1px 5px 1px #337ab7;
+}
+.error {
+    color: #A94442;
+    width: 100%;
+}
+.errors {
+    border-color: #ff3860;
+    color: #ff3860;
+    font-size: 14px;
+    height: 13px;
+    line-height: 80%;
+}
+.content input {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* design welcome text */
+h1 {
+    color: #000000;
+    font-size: 5vw;
+    text-align: center;
+}
+h2 {
+    color: #dc0d33;
+    font-size: 3vw;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #000000;
+}
+.welcome {
+    color: #969696;
+}
+.para {
+    color: #dc0d33;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #2e6da4;
+}
+
+/* register design */
+.register {
+    width: 100%;
+}
+.from-container {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 350px;
+    height: 380px;
+    color: black;
+    border: 1px solid #ddd;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+}
+.title_img {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-55%);
+    left: 50%;
+    top: 45%;
+    margin-top: -50%;
+    padding: 25px 30px;
+    border-radius: 5px 5px 0px 0px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+}
+.from-container .boxs {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+}
+.btn {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+}
+
+    /* Footer design*/
+footer{
+    margin-top:auto;
+}
+.years {
+    display: block;
+    box-sizing: border-box;
+    width: 1425px;
+    color: #333333;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding: 30px;
+    font-size: 14px;
+    text-align: center;
+    margen: 100%;
+}
+
+    /* Design login header */
+.showcase-top {
+    position: relative;
+    z-index: 2;
+    height: 110%;
+    background: #f5f5f5;
+}
+.showcase-top img {
+    top: 30%;
+    left: 5%;
+}
+.showcase-top .butt {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.butt:hover{
+    background: #dc0d33;
+    color: #ddd;
+}
+.btn-top-3{
+    position: absolute;
+    top: 25%;
+    right: 66%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.btn-top-2{
+    position: absolute;
+    top: 25%;
+    right: 77%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.btn-top{
+    position: absolute;
+    top: 25%;
+    right: 72%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.btn-top-4 {
+    position: absolute;
+    top: 25%;
+    right: 58%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.btn-top-5 {
+    position: absolute;
+    top: 25%;
+    right: 54%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.btn-top-6 {
+    position: absolute;
+    top: 25%;
+    right: 47%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+.btn-top-6:hover{
+    background: #dc0d33;
+    color: #ddd;
+}
+.btn-top-5:hover {
+    background: #dc0d33;
+    color: #ddd;
+}
+
+.btn-top-3:hover{
+    background: #dc0d33;
+    color: #ddd;
+}
+.btn-top-4:hover {
+    background: #dc0d33;
+    color: #ddd;
+}
+
+.btn-top-2:hover {
+    background: #dc0d33;
+    color: #ddd;
+}
+.btn-top:hover {
+    background: #dc0d33;
+    color: #ddd;
+}
+.showcase-top butt:hover {
+    background: #dc0d33;
+    color: #ddd;
+}
+.showcase-top .session {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 18px;
+}
+.time {
+    position: absolute;
+    top: 30%;
+    right: 22%;
+    font-size: 18px;
+}
+
+    /* Design content login */
+table {
+    margin-top: 5%;
+    border-collapse: collapse;
+    width: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid #ddd;
+
+}
+td {
+    text-align: center;
+    height: 20px;
+    padding: 20px;
+
+}
+tr td a {
+    right: 5%;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #dc0d33;
+}
+tr td a:hover {
+    background: #dc0d33;
+    color: #ddd;
+}
+
+/* design edit page */
+.edit-box {
+    width: 350px;
+    height: 380px;
+    color: black;
+    border: 1px solid #ddd;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+}
+.edit-box .img {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-55%);
+    left: 50%;
+    top: 50%;
+    margin-top: -50%;
+    padding: 25px 30px;
+    border-radius: 5px 5px 0px 0px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+}
+.edit-content {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 3px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40%;
+
+}
+.edit-content .shadw {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+
+}
+.edit-box  .btn {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.role {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.pub-role {
+    width: 100%;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+ /* design button new users */
+
+.new {
+    font-size: 16px;
+    width: 10%;
+    height: 25px;
+    border: 1px solid #ddd;
+    top: 90px;
+    left: 20%;
+    color: #dc0d33;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.search {
+    font-size: 16px;
+    width: 20%;
+    height: 25px;
+    border: 1px solid #ddd;
+    top: 80px;
+    left: 49.4%;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px 0px 0px 5px ;
+    position: relative;
+}
+.search:hover {
+    border-color: #337ab7;
+}
+.btn-search {
+    font-size: 16px;
+    width: 5%;
+    height: 25px;
+    top: 80px;
+    left: 49.1%;
+    color: #dc0d33;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.btn-reset {
+    font-size: 16px;
+    width: 5%;
+    height: 20px;
+    border: 1px solid #bebebe;
+    top: 80px;
+    left: 49%;
+    color: #dc0d33;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.btn-reset:hover {
+    border-color: #dc0d33;
+    color: #ddd;
+    background: #dc0d33;
+}
+.btn-search:hover {
+    border-color: #dc0d33;
+    color: #ddd;
+    background: #dc0d33;
+
+}
+.new:hover {
+    background: #dc0d33;
+    color: #ddd;
+    height: 25px;
+}
+
+.container {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 350px;
+    height: 380px;
+    color: black;
+    border: 1px solid #ddd;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Design welcome page */
+.welcome {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+/* Design Articles Adding box */
+.from-container-box {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 550px;
+    color: black;
+    border: 1px solid #ddd;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 55%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+}
+.title_art {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-55%);
+    left: 50%;
+    top: 45%;
+    margin-top: -40%;
+    padding: 25px 30px;
+    border-radius: 5px 5px 0px 0px;
+    width: 550px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+}
+.headline {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+}
+.area {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* New Categories Page Design  */
+.cat-box {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 350px;
+    height: 150px;
+    color: black;
+    border: 1px solid #ddd;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+}
+.title_cat {
+    position: absolute;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transform: translate(-50%,-55%);
+    left: 50%;
+    top: 70%;
+    margin-top: -50%;
+    padding: 25px 30px;
+    border-radius: 5px 5px 0px 0px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+}
+
+/* Edit Categories design */
+
+.rool {
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 20%;
+}
+
+/* Design of Pagination  */
+
+.pagination {
+    position: absolute;
+    left: 40%;
+    top: 100%;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+
+}
+.pagination a.active {
+    background-color: #ddd;
+
+}
+
